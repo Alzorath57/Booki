@@ -156,6 +156,7 @@ form {
   box-sizing: border-box;
   outline: none;
 }
+
 /****** Filtres ***********/
 
 .filtre {
@@ -181,6 +182,25 @@ form {
 .filtre button:hover {
   cursor: pointer;
   background-color: var(--filter-bg-color);
+}
+
+/****** Info-Text ***********/
+
+.info-text {
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.info-text .fa-info {
+  color: var(--main-color);
+  border-radius: 50%;
+  border: 2px solid var(--main-bg-color);
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /****** Hebergements And Populaires ***********/
