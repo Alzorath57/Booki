@@ -138,6 +138,7 @@ form {
 }
 .search-btn:hover {
   cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 .search-bar {
   background-color: white;
@@ -154,6 +155,32 @@ form {
   font-weight: bold;
   box-sizing: border-box;
   outline: none;
+}
+/****** Filtres ***********/
+
+.filtre {
+  margin: 35px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.filtre span {
+  font-weight: bold;
+}
+.filtre button {
+  border-radius: 25px;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  height: 50px;
+  gap: 10px;
+  padding: 4px 19px;
+}
+.filtre button:hover {
+  cursor: pointer;
+  background-color: var(--filter-bg-color);
 }
 
 /****** Hebergements And Populaires ***********/
