@@ -91,8 +91,9 @@ header nav li {
 header nav a {
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   border-top: 2px solid transparent;
+  padding-top: 16px;
 }
 header nav a:hover {
   border-top: 2px solid var(--main-color);
@@ -152,6 +153,9 @@ form {
   align-items: center;
   flex: 1;
 }
+.search-bar input::placeholder {
+  color: black;
+}
 .search-bar input {
   width: 100%;
   border: none;
@@ -162,9 +166,16 @@ form {
 }
 
 /****** Filtres ***********/
-
 .filtre {
-  margin: 35px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 35px;
+}
+.filtre h2 {
+  font-size: 16px;
+}
+.filtre-btns {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -195,8 +206,9 @@ form {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin: 35px 0;
 }
-.info-text .fa-info {
+.info-text .info-icon {
   color: var(--main-color);
   border-radius: 50%;
   border: 2px solid var(--main-bg-color);
@@ -235,6 +247,11 @@ form {
   height: 124px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+.hebergements-cards .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .hebergements-cards a {
   width: calc(33.33% - 25px);
@@ -304,14 +321,18 @@ form {
   gap: 30px;
   margin-top: 30px;
 }
+.activites-cards .card-title {
+  padding-left: 19px;
+}
 .activites-cards a {
-  width: calc(25% - 30px);
+  width: calc(25% - 22.5px);
   height: 100%;
 }
 .activites-cards .card {
   display: flex;
   flex-direction: column;
   height: 100%;
+  padding: 0;
 }
 .activites-cards img {
   border-top-left-radius: 20px;
@@ -332,6 +353,7 @@ footer {
 }
 .footer-colonne {
   padding: 20px;
+  width: 33.33%;
 }
 .footer-colonne ul {
   padding: 0;
