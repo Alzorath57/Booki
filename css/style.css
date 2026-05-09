@@ -432,13 +432,8 @@ footer {
     height: 200px;
   }
   .activites-cards a {
-    display: flex;
-    flex-direction: column;
     width: calc(25% - 22.5px);
     height: 270px;
-  }
-  .activites-cards .card {
-    height: 100%;
   }
 }
 
