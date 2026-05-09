@@ -110,10 +110,14 @@ header nav a:hover {
   margin: 0;
   padding-bottom: 35px;
 }
+
 .hero-text {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+.search-icon .fa-solid {
+  display: none;
 }
 form {
   display: flex;
@@ -173,7 +177,7 @@ form {
   margin-top: 35px;
 }
 .filtre h2 {
-  font-size: 16px;
+  font-size: 18px;
 }
 .filtre-btns {
   display: flex;
@@ -422,4 +426,98 @@ footer {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   /* ... */
+
+  .main-container {
+    padding: 0;
+  }
+
+  /****** Header ***********/
+
+  header {
+    flex-direction: column;
+    padding-bottom: 96px;
+  }
+  header img {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  header nav a {
+    border-bottom: 2px solid var(--main-bg-color);
+    justify-content: center;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav ul {
+    width: 100%;
+    justify-content: space-around;
+    gap: 0;
+  }
+  header nav li {
+    width: 100%;
+  }
+
+  header nav a:hover {
+    border-bottom: 2px solid var(--main-color);
+    border-top: 2px solid transparent;
+    color: var(--main-color);
+  }
+
+  /****** Hero ***********/
+
+  .hero-text h1 {
+    margin: 0 20px;
+    max-width: 300px;
+  }
+  .hero-text p {
+    margin: 0 20px;
+  }
+  form {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .search-icon .fa-solid {
+    display: block;
+    color: white;
+  }
+  .search-btn span {
+    display: none;
+  }
+  .search-btn {
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 12px;
+    height: 49px;
+  }
+
+  /****** Filtres ***********/
+
+  .filtre {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .filtre h2 {
+    align-self: flex-start;
+  }
+
+  .filtre-btns {
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .filtre button {
+    width: calc(50% - 5px);
+  }
+
+  /****** Info-Text ***********/
+
+  .info-text {
+    padding: 0 20px;
+  }
+  .info-text .info-icon {
+    box-sizing: border-box;
+    min-width: 24px;
+  }
 }
