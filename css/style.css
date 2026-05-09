@@ -496,7 +496,7 @@ footer {
     display: block;
     color: white;
   }
-  .search-btn span {
+  .search-btn .search-text {
     display: none;
   }
   .search-btn {
