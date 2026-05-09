@@ -397,17 +397,21 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 15px;
   }
 
   .populaires-cards img {
-    height: 120px;
+    height: 146px;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 0;
+    border-bottom-left-radius: 20px;
+    width: 40%;
   }
 
   .populaires-cards a {
-    width: 30%;
+    width: calc(33.33% - 10px);
+  }
+  .populaires-cards .card-content {
+    width: 60%;
   }
 
   .populaires-cards .card-title {
@@ -420,12 +424,21 @@ footer {
 
   /****** Activites ***********/
 
-  .activites-cards a {
-    width: calc(25% - 23px);
+  .activites-cards {
+    flex-direction: row;
+    align-items: stretch;
   }
-
   .activites-cards img {
-    height: 180px;
+    height: 200px;
+  }
+  .activites-cards a {
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - 22.5px);
+    height: 270px;
+  }
+  .activites-cards .card {
+    height: 100%;
   }
 }
 
