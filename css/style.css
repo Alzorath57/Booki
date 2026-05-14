@@ -40,11 +40,11 @@ a {
   background-color: white;
   border-radius: 20px;
   padding: 5px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card:hover {
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
 }
 
 .card img {
@@ -147,7 +147,7 @@ form {
 }
 .search-btn:hover {
   cursor: pointer;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 .search-bar {
   background-color: white;
@@ -170,24 +170,24 @@ form {
 }
 
 /****** Filtres ***********/
-.filtre {
+.filter {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-top: 35px;
 }
-.filtre h2 {
+.filter h2 {
   font-size: 18px;
 }
-.filtre-btns {
+.filter-btns {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.filtre span {
+.filter span {
   font-weight: bold;
 }
-.filtre button {
+.filter button {
   border-radius: 25px;
   font-weight: bold;
   background-color: white;
@@ -198,7 +198,7 @@ form {
   gap: 10px;
   padding: 4px 19px;
 }
-.filtre button:hover {
+.filter button:hover {
   cursor: pointer;
   background-color: var(--filter-bg-color);
 }
@@ -240,6 +240,16 @@ form {
 .hebergements {
   width: 65%;
 }
+.hebergements-cards .card-title {
+  margin-left: 10px;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+.hebergements-cards .card-subtitle {
+  margin-left: 10px;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
 .hebergements-cards {
   display: flex;
   flex-wrap: wrap;
@@ -249,8 +259,8 @@ form {
 .hebergements-cards .card img {
   width: 100%;
   height: 124px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .hebergements-cards .card {
   display: flex;
@@ -260,6 +270,11 @@ form {
 .hebergements-cards a {
   width: calc(33.33% - 25px);
   height: 100%;
+}
+.hebergements .card-rating {
+  padding-left: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
 }
 .hebergements > a {
   display: block;
@@ -287,8 +302,8 @@ form {
 .populaires-cards img {
   width: 33%;
   height: 136px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .populaires-cards .card-content {
@@ -402,8 +417,6 @@ footer {
 
   .populaires-cards img {
     height: 146px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
     width: 40%;
   }
 
@@ -509,19 +522,19 @@ footer {
 
   /****** Filtres ***********/
 
-  .filtre {
+  .filter {
     flex-direction: column;
     padding: 0 20px;
   }
-  .filtre h2 {
+  .filter h2 {
     align-self: flex-start;
   }
 
-  .filtre-btns {
+  .filter-btns {
     flex-wrap: wrap;
     align-items: stretch;
   }
-  .filtre button {
+  .filter button {
     width: calc(50% - 5px);
   }
 
