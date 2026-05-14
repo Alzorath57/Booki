@@ -564,8 +564,7 @@ footer {
     width: 100%;
   }
   .populaires-cards img {
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 15px;
   }
 
   /****** Hebergements ***********/
