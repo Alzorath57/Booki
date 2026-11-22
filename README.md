@@ -2,14 +2,13 @@
 
 Intégration de la page d'accueil d'une agence de voyage en ligne, à partir d'une maquette Figma, en **HTML et CSS purs** (sans framework).
 
-> Premier projet de code de ma formation Développeur Web d'OpenClassrooms (2026).
+> Premier projet de code de ma formation Développeur Web d'OpenClassrooms (2026). La section « Les plus populaires » était fournie comme exemple : j'ai intégré tout le reste de la page.
 
 ## Ce que contient la page
 
 - Un **header** avec logo et navigation.
 - Un **formulaire de recherche** et des **filtres** par type d'hébergement.
 - Une section **hébergements** sous forme de cartes en grille.
-- Une section **« Les plus populaires »**.
 - Une section **activités**.
 - Un **footer** organisé en colonnes.
 
